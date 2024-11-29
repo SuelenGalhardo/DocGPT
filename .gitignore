@@ -1,0 +1,7 @@
+# Node.js (para Angular)
+/frontend/node_modules
+/frontend/dist
+
+# Python (para Flask)
+/backend/__pycache__
+/backend/env

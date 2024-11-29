@@ -1,0 +1,8 @@
+Flask
+pytest
+pytest-flask
+
+requests
+Flask-Testing
+pytest-cov
+  # Ajusta esta versión según sea necesario
