@@ -6,4 +6,4 @@ El backend utiliza marcos avanzados como LangChain para procesar entradas, integ
 
 Este proyecto también funciona como un riguroso ejercicio práctico de evaluación, estableciendo una base sólida de rendimiento y fiabilidad para herramientas de procesamiento de documentos con IA.
 
-En cada Readme, tendrás mas infromación. 
+En cada Readme, tendrás mas información. 
