@@ -1,6 +1,11 @@
 # Node.js (para Angular)
 /frontend/node_modules
 /frontend/dist
+# Node modules y caché de Angular
+node_modules/
+.angular/cache/
+.angular/
+
 
 # Python (para Flask)
 /backend/__pycache__

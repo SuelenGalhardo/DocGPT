@@ -1,0 +1,35 @@
+<mat-card class="chat-container">
+    <!-- Ventana del chat -->
+    <div class="chat-window">
+      <div *ngFor="let message of messages" class="message" [ngClass]="{'user': message.sender === 'user', 'system': message.sender === 'system'}">
+        <p>{{ message.text }}</p>
+      </div>
+    </div>
+  
+    <!-- Entrada de texto y acciones -->
+    <div class="chat-input">
+      <mat-form-field class="input-field" appearance="outline">
+        <mat-label>Escribe un mensaje...</mat-label>
+        <input matInput [(ngModel)]="userInput" />
+      </mat-form-field>
+  
+      <!-- Botones de acción -->
+      <button mat-icon-button color="primary" (click)="sendMessage()">
+        <mat-icon>send</mat-icon>
+      </button>
+    
+      <button mat-icon-button color="warn" (click)="summarizeMessage()">
+        <mat-icon>description</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)="translateMessage()">
+        <mat-icon>translate</mat-icon>
+      </button>
+      <button mat-icon-button color="accent" (click)="uploadAndTranslateFile()">
+        <mat-icon>upload</mat-icon>
+      </button>
+      <button mat-icon-button color="primary" (click)="modifyMessage()">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+  
